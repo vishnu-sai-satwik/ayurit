@@ -1,0 +1,150 @@
+.appointment-booking {
+  padding: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.appointment-booking h2 {
+  color: #333;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.booking-form {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input[type="date"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-group input[type="date"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.loading,
+.empty {
+  text-align: center;
+  color: #999;
+  padding: 16px;
+  font-style: italic;
+}
+
+.slots-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.slot-option {
+  padding: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.slot-option:hover {
+  border-color: #4CAF50;
+  background: #f9fff9;
+}
+
+.slot-option.selected {
+  border-color: #4CAF50;
+  background: #e8f5e9;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.slot-time {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+}
+
+.slot-duration {
+  font-size: 12px;
+  color: #999;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btn-primary {
+  background: #4CAF50;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.btn-primary:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  border-left: 4px solid #c62828;
+}
+
+.success-message {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  border-left: 4px solid #2e7d32;
+  font-weight: 600;
+}
