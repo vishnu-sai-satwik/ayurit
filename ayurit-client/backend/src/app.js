@@ -15,7 +15,9 @@ app.use(cors({
     "http://localhost:5173",
     "https://papaya-fox-635911.netlify.app"
   ],
-  credentials: true
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 app.use(helmet());
 app.use(express.json({ limit: "2mb" }));
