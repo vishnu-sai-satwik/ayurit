@@ -13,7 +13,7 @@ const http = require('http');
 const https = require('https');
 
 // Configuration
-const API_BASE = process.env.API_BASE || 'http://localhost:4000/api';
+const API_BASE = process.env.API_BASE || 'https://ayurit.onrender.com/api';
 const DOCTOR_EMAIL = process.env.DOCTOR_EMAIL || 'doctor@test.com';
 const DOCTOR_PASSWORD = process.env.DOCTOR_PASSWORD || 'password123';
 const PATIENT_EMAIL = process.env.PATIENT_EMAIL || 'patient@test.com';
